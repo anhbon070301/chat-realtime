@@ -22,7 +22,7 @@ class SendMessage implements ShouldBroadcast
      */
     public function __construct()
     {
-        $this->data = "tôi là test";
+        $this->data = "3 ngày dell xong";
     }
 
     /**
