@@ -20,9 +20,9 @@ class SendMessage implements ShouldBroadcast
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(array $data)
     {
-        $this->data = "3 ngày dell xong";
+        $this->data = $data;
     }
 
     /**

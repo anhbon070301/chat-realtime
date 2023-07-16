@@ -19,5 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('test', function() {
-    broadcast(new SendMessage());
+    broadcast(new SendMessage([
+        "id" => 1,
+        "message" => "tôi là test"
+    ]));
 });

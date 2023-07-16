@@ -38,6 +38,9 @@ class AutoSend extends Command
      */
     public function handle()
     {
-        broadcast(new SendMessage());
+        broadcast(new SendMessage([
+            "id" => 1,
+            "message" => "tôi là test"
+        ]));
     }
 }
